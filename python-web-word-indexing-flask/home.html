@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <script>
+    function geturlfrequency() {
+    document.getElementById("selm").textContent="aynn"
+  }
+    </script>
+    <body>
+      <label style=position:absolute;left:50px;top:50px;>Url girin</label>
+        <p id="firsturlfreqcont" style="overflow:scroll; height:400px;width:150px;position:absolute;top:160px;left:50px;">{{firsturlfrequencycontent}}</p>
+        <p id="firsturlkeywordfreqcont"style="overflow:scroll; height: 100px;width:150px;position:absolute;top:570px;left:50px;">{{firsturlkeywordscontent}}</p>
+            <form action="/firsturl" method="POST">
+              <textarea name="url" style=position:absolute;left:50px;top:80px;></textarea>>
+              <button style=position:absolute;left:50px;top:130px;width:75px;height:35px;>Frekans Hesapla </button>
+            </form>
+      <label style="position:absolute;left:250px;top: 50px;">Url girin</label>
+        <p id="secondurlfreqcont" style="overflow:scroll;height: 400px;width:150px;position: absolute;top: 160px;left: 250px;">{{secondurlfrequencycontent}}</p>
+        <p id="secondurlkeywordfreqcont" style="overflow:scroll;height: 100px;width:150px;position: absolute;top: 570px;left: 250px;">{{secondurlkeywordscontent}}</p>
+            <form action="/secondurl" method="POST">
+              <textarea name="url" style="position:absolute;left:250px;top:80px;"></textarea>>
+              <button style=position:absolute;left:250px;top:130px;width:75px;height:35px;>Frekans Hesapla</button>
+            </form>
+      <label style="position: absolute;left:500px;top:50px;">Skor hesapla</label>
+        <p id="score" style="height:100px;width:50px;position: absolute;top:160px;left:500px;">{{score}}</p>
+            <form action="/score">
+              <button style="position:absolute;left:500px;top:130px;width:75px;height: 35px;">Skor Hesapla</button>
+            </form>
+      <label style="position: absolute;left:600px;top:50px;">Suburl calc url</label>
+            <form action="suburlindexing" method="POST">
+              <textarea name="url" style=position:absolute;left:600px;top:80px;></textarea>>
+              <button style="position: absolute;left:600px;top:130px;width: 75px;height:35px">SubUrl Hesapla</button>
+            </form>
+      
+
+        
+      
+    </body>
+ 
+</html>
